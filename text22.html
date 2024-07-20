@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Form</title>
+    <link rel="stylesheet" href="for.css">
+</head>
+<body>
+    <div class="form-container">
+            <img src="images.png" alt="" class="form-image">
+            <h3 class="form-title">Patient Record</h3>
+    
+        <form>
+
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="language">Preferred Language:</label>
+            <select id="language" name="language">
+                    <option value="">Prefered Language:</option>
+                    <option value="regional">English | Pidgin</option>
+                    <option value="state_wide">Hausa</option>
+                    <option value="country_wide">Ibo</option>
+                    <option value="country_wide">Yoruba</option>
+                  
+            </select>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <div class="row">
+                <label for="age">Age:</label>
+                <select id="age" name="age">
+                </select>
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex">
+                </select>
+                        
+                <label for="living">Living:</label>
+                <select id="living" name="living">
+                 </select>
+                
+            </div>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location">
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                    <option value="">State:</option>
+                    <option value="abia">Abia</option>
+                    <option value="adamawa">Adamawa</option>
+                    <option value="akwa-ibom">Akwa-Ibom</option>
+                    <option value="anambra">Anambra</option>
+                    <option value="bayelsa">Bayelsa</option>
+                    <option value="bauchi">Bauchi</option>
+                    <option value="benue">Benue</option>
+                    <option value="borno">Borno</option>
+                    <option value="cross_rivers">Cross-River</option>
+                    <option value="delta">Delta</option>
+                    <option value="ebonyi">Ebonyi</option>
+                    <option value="edo">Edo</option>
+                    <option value="ekiti">Ekiti</option>
+                    <option value="enugu">Enugu</option>
+                    <option value="fct_abuja">FCT-Abuja</option>
+                    <option value="gombe">Gombe</option>
+                    <option value="imo">Imo</option>
+                    <option value="jigawa">Jigawa</option>
+                    <option value="kaduna">Kaduna</option>
+                    <option value="kano">Kano</option>
+                    <option value="katsina">Katsina</option>
+                    <option value="kebbi">Kebbi</option>
+                    <option value="kwara">Kwara</option>
+                    <option value="kogi">Kogi</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="nasarawa">Nasarawa</option>
+                    <option value="niger">Niger</option>
+                    <option value="ondo">Ondo</option>
+                    <option value="ogun">Ogun</option>
+                    <option value="oyo">Oyo</option>
+                    <option value="osun">Osun</option>
+                    <option value="plateau">Plateau</option>
+                    <option value="rivers">Rivers</option>
+                    <option value="sokoto">Sokoto</option>
+                    <option value="taraba">Taraba</option>
+                    <option value="yobe">Yobe</option>
+                    <option value="zamfara">Zamfara</option>
+                    
+            </select>
+
+            <label for="allergies">Allergies:</label>
+            <textarea id="allergies" name="allergies" maxlength="20"></textarea>
+
+            <label for="medical_condition">Known Medical Condition:</label>
+            <textarea id="medical_condition" name="medical_condition" maxlength="50"></textarea>
+
+            <label for="drug_regimen">Drug Regimen:</label>
+            <textarea id="drug_regimen" name="drug_regimen" maxlength="20"></textarea>
+            <br>
+<legend></legend>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
