@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +11,11 @@
 
 <style> body{padding:20px;}</style>
 
-<link rel="stylesheet" type="text/css" href="./Registration Form_files/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 
-<link rel="stylesheet" type="text/css" href="./Registration Form_files/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 
-<link href="./Registration Form_files/style.css" rel="stylesheet">
+<link href="./style.css" rel="stylesheet">
 
 <script src="./Registration Form_files/modernizr.custom.js.download">
 </script>
@@ -22,160 +23,216 @@
 </head>
 
 <body>
+
 <div class="container">
-<div class="row">
-<div class="col-md-6 col-md-offset-3">
-<form action="lib/process_reg.php" id="msgSend" method="post" class="form" role="form" enctype="multipart/form-data">
-<legend>Registration form</legend>
 
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
 
+<!-- Form Name -->
+<legend>Contact Us Today!</legend>
 
-<p style="text-align:center; font-weight:bold; color:red"></p>
-<div id="output"></div>
-<div class="control-group">
-  <input name="contactperson1_name" type="text" class="form-control input-lg" value name="contactperson1_name" id="contactperson1_name" placeholder="Phone number" required>
-  <legend></legend>
+<!-- Text input-->
 
-<div class="row">
-<div class="col-xs-6 col-md-6">
-  <select name="spread" class="form-control input-lg">
-    <option value="">Prefered language:</option>
-    <option value="regional">English</option>
-    <option value="state_wide">Hausa</option>
-    <option value="country_wide">Igbo</option>
-    <option value="country_wide">Yoruba</option>
-    <option value="country_wide">Pidgin Engliah</option>
-    
-    </select>
-</div>
-<div class="col-xs-6 col-md-6">
-<input  name="contactperson1_phno" type="text" class="form-control input-lg" name="contactperson1_phno" value id="contactperson1_phno" placeholder="Name" required>
-</div>
-</div>
-<div class="row">
-
-<div class="col-xs-6 col-md-6">
-
-<div id="username_availability_result"></div>
-</div>
-</div>
-<legend></legend>
-
-<div class="row">
-<div class="col-xs-4 col-md-4">
-<select name="spread" class="form-control input-lg">
-<option value="">Age:</option>
-<option value="regional">Regional</option>
-<option value="state_wide">State-Wide</option>
-<option value="country_wide">Country-Wide</option>
-
-</select>
-</select>
-</div>
-<div class="col-xs-4 col-md-4">
-<select name="region" class="form-control input-lg">
-<option value="">Sex:</option>
-<option value="nc">North-Central</option>
-<option value="ne">North-East</option>
-<option value="nw">North-West</option>
-<option value="se">South-East</option>
-<option value="ss">South-South</option>
-<option value="sw">South-West</option>
-
-</select>
-</select>
-</div>
-<div class="col-xs-4 col-md-4">
-  <select name="region" class="form-control input-lg">
-    <option value="">Living with:</option>
-    <option value="nc">North-Central</option>
-    <option value="ne">North-East</option>
-    <option value="nw">North-West</option>
-    <option value="se">South-East</option>
-    <option value="ss">South-South</option>
-    <option value="sw">South-West</option>
-    
-    </select>
-</div>
-</div>
-<div class="control-group">
-  <select name="state" class="form-control input-lg">
-    <option value="">State:</option>
-    <option value="abia">Abia</option>
-    <option value="adamawa">Adamawa</option>
-    <option value="akwa-ibom">Akwa-Ibom</option>
-    <option value="anambra">Anambra</option>
-    <option value="bayelsa">Bayelsa</option>
-    <option value="bauchi">Bauchi</option>
-    <option value="benue">Benue</option>
-    <option value="borno">Borno</option>
-    <option value="cross_rivers">Cross-River</option>
-    <option value="delta">Delta</option>
-    <option value="ebonyi">Ebonyi</option>
-    <option value="edo">Edo</option>
-    <option value="ekiti">Ekiti</option>
-    <option value="enugu">Enugu</option>
-    <option value="fct_abuja">FCT-Abuja</option>
-    <option value="gombe">Gombe</option>
-    <option value="imo">Imo</option>
-    <option value="jigawa">Jigawa</option>
-    <option value="kaduna">Kaduna</option>
-    <option value="kano">Kano</option>
-    <option value="katsina">Katsina</option>
-    <option value="kebbi">Kebbi</option>
-    <option value="kwara">Kwara</option>
-    <option value="kogi">Kogi</option>
-    <option value="lagos">Lagos</option>
-    <option value="nasarawa">Nasarawa</option>
-    <option value="niger">Niger</option>
-    <option value="ondo">Ondo</option>
-    <option value="ogun">Ogun</option>
-    <option value="oyo">Oyo</option>
-    <option value="osun">Osun</option>
-    <option value="plateau">Plateau</option>
-    <option value="rivers">Rivers</option>
-    <option value="sokoto">Sokoto</option>
-    <option value="taraba">Taraba</option>
-    <option value="yobe">Yobe</option>
-    <option value="zamfara">Zamfara</option>
-    
-    </select>
-</div>
-<div class="control-group">
-  <input  name="location" type="text" class="form-control input-lg" name="contactperson1_phno" value id="contactperson1_phno" placeholder="Location" required>
-</div>
-<legend></legend>
-<label>Allergies</label>
-<div class="row">
-  <div class="col-xs-6 col-md-6">
-  <textarea id="drug_regimen" name="drug_regimen" maxlength="20" placeholder="  Allergies"></textarea>
-  </div>
-  </div>
-<label>Known Medial Conditon</label>
-<div class="row">
-  <div class="col-xs-6 col-md-6">
-  <textarea id="drug_regimen" name="drug_regimen" maxlength="20" placeholder="  Known Medial Conditon"></textarea>
-  </div>
-  </div>
-  <label>Drug regimen</label>
-  <div class="row">
-    <div class="col-xs-6 col-md-6">
-    <textarea id="drug_regimen" name="drug_regimen" maxlength="20" placeholder="  Current Drug regiimen"></textarea>
+<div class="form-group">
+  <label class="col-md-4 control-label">First Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
     </div>
-    </div>
-<legend></legend>
-
-
-<div class="control-group">
-  <input name="submit" type="submit" class="btn btn-lg btn-primary btn-block signup-btn" id="msgButton" value="REGISTER">
+  </div>
 </div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Last Name</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+      
+<div class="form-group">
+  <label class="col-md-4 control-label">Address</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="address" placeholder="Address" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+ 
+<div class="form-group">
+  <label class="col-md-4 control-label">City</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="city" placeholder="city" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">State</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >Please select your state</option>
+      <option>Alabama</option>
+      <option>Alaska</option>
+      <option >Arizona</option>
+      <option >Arkansas</option>
+      <option >California</option>
+      <option >Colorado</option>
+      <option >Connecticut</option>
+      <option >Delaware</option>
+      <option >District of Columbia</option>
+      <option> Florida</option>
+      <option >Georgia</option>
+      <option >Hawaii</option>
+      <option >daho</option>
+      <option >Illinois</option>
+      <option >Indiana</option>
+      <option >Iowa</option>
+      <option> Kansas</option>
+      <option >Kentucky</option>
+      <option >Louisiana</option>
+      <option>Maine</option>
+      <option >Maryland</option>
+      <option> Mass</option>
+      <option >Michigan</option>
+      <option >Minnesota</option>
+      <option>Mississippi</option>
+      <option>Missouri</option>
+      <option>Montana</option>
+      <option>Nebraska</option>
+      <option>Nevada</option>
+      <option>New Hampshire</option>
+      <option>New Jersey</option>
+      <option>New Mexico</option>
+      <option>New York</option>
+      <option>North Carolina</option>
+      <option>North Dakota</option>
+      <option>Ohio</option>
+      <option>Oklahoma</option>
+      <option>Oregon</option>
+      <option>Pennsylvania</option>
+      <option>Rhode Island</option>
+      <option>South Carolina</option>
+      <option>South Dakota</option>
+      <option>Tennessee</option>
+      <option>Texas</option>
+      <option> Uttah</option>
+      <option>Vermont</option>
+      <option>Virginia</option>
+      <option >Washington</option>
+      <option >West Virginia</option>
+      <option>Wisconsin</option>
+      <option >Wyoming</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Zip Code</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+    </div>
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Website or domain name</label>  
+   <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+  <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- radio checks -->
+ <div class="form-group">
+                        <label class="col-md-4 control-label">Do you have hosting?</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="yes" /> Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" value="no" /> No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Text area -->
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Project Description</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
 </form>
 </div>
-</div>
-</div>
-</div>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/jquery.form.js"></script>
-<script src="assets/js/custom.js"></script>
-</body>
-</html>
+    </div><!-- /.container -->
